@@ -1,12 +1,13 @@
 import React from 'react';
 import './style.scss'
+// import {Link} from 'react-router-dom'
 
 const links = [{
    to: '/perfil',
    texto: 'Perfil',
    class: 'fas fa-user'   
 },{
-   to: '/inicio',
+   to: '/',
    texto: 'Feed',
    class: 'fas fa-home'   
 },{
@@ -28,13 +29,13 @@ const NavBar = () => {
    return (
       <nav className="menu">
             <button className="bars" onClick={() => setOpen(o => !o)}>
-               <i class="fas fa-bars"></i>
+               <i className="fas fa-bars"></i>
             </button>
             <div className="links" style={{ display: open ? "flex" : "none" }}>
                {links.map(l => (
-                  <div className="cardlink">
-                     <i class={l.class}></i>
-                     <a className="link" key={l.index} href={l.to} >{l.texto}</a>
+                  <div key={l.toString()} className="cardlink">
+                     <i className={l.class}/>
+                     <a className="link"  href={l.to} >{l.texto}</a>
                   </div>
                ))}
          </div>

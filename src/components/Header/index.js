@@ -8,9 +8,10 @@ class Header extends React.Component {
    render() {
       return (
          <S.Header>
-            <S.Div>
+            <div>
                <NavBar />
-            </S.Div>
+            </div>
+               
             <S.Title width="80">HEADER AQUI</S.Title>
          </S.Header>
       );
