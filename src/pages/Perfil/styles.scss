@@ -1,0 +1,95 @@
+#Perfil {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-around;
+   .title {
+      margin-bottom: 10px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      color: #ffffff;
+   }
+   .perfil {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      position: relative;
+      .imagemPerfil {
+         max-width: 300px;
+         height: 300px;
+         img {
+            max-width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 9px solid #81c565;
+         }
+      }
+      .changePic {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: absolute;
+         width: 50px;
+         height: 50px;
+         right: 80px;
+         bottom: 50px;
+         background: #e57728;
+         color: #ffffff;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+         font-size: 1.5rem;
+         border-radius: 50%;
+      }
+   }
+   .selecao {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 300px;
+      overflow: auto;
+      padding: 0 20px;
+
+      .cardSelecao {
+         background: #47484c;
+         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+         border-radius: 10px;
+         margin-bottom: 5px;
+         padding: 10px;
+         width: 100%;
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         i {
+            font-size: 1.5rem;
+            color: #ffffff;
+         }
+         .itens {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            img {
+               padding: 10px;
+               border-radius: 50%;
+               width: 50px;
+               height: 50px;
+               background-color: #dcf5d2;
+               box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+            }
+            h2 {
+               padding-left: 20px;
+               font-family: Montserrat;
+               font-style: normal;
+               font-weight: normal;
+               font-size: 18px;
+               line-height: 22px;
+               color: #e4e7ff;
+            }
+         }
+      }
+   }
+}
